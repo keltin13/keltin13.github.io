@@ -1,0 +1,120 @@
+.title {
+    color: black;
+}
+
+.title_box {
+	width: 100%;
+	background-color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 15px;
+	text-align: center;
+    height: 1000px;
+    border-radius: 2px;
+}
+
+.title {
+    margin-top: 139px;
+    margin-bottom: 159px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    height: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+/* Image Columns */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-image: url("Panos/IMG_5050.JPG");
+	background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    background-color: white;
+    border-radius: 2px;
+    padding-bottom: 10px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Header */
+
+a {
+	color: black;
+}
+
+li a {
+	display: block;
+    padding: 8px;
+	text-decoration: none;
+	background-color: white;
+}
+
+li a.active {
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-color: white;
+    border-radius: 2px;
+}
+
+li {
+    float: left;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+	color: black;
+}
