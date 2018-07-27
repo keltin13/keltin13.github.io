@@ -1,22 +1,6 @@
 .title {
-    color: black;
-}
-
-.title_box {
-	width: 100%;
-	background-color: white;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding: 15px;
-	text-align: center;
-    height: 1000px;
-    border-radius: 2px;
-}
-
-.title {
-    margin-top: 8.9vw;
-    margin-bottom: 1.55vw;
+    margin-top: 110px;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
     background-color: transparent;
@@ -26,8 +10,8 @@
 }
 
 .subtitle {
-    margin-top: 1.55vw;
-    margin-bottom: 8.8vw;
+    margin-top: 20px;
+    margin-bottom: 160px;
     width: 100%;
     text-align: center;
     background-color: transparent;
@@ -57,6 +41,42 @@
     padding: 0 4px;
 }
 
+.column67 {
+    -ms-flex: 67%;
+    flex: 67%;
+    max-width: 67%;
+    padding: 0 4px;
+    margin-top: 8px;
+}
+
+.column33 {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column25 {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+@media screen and (max-width: 800px) {
+    .column67, .column33, .column75, .column25 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+}
+
+.column33 img, .column25 img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
 .sectionhead {
     font-style: bold;
     font-size: 35px;
@@ -65,9 +85,9 @@
 }
 
 .sectiontext {
-    font-size: 20px;
+    font-size: 25px;
     color: black;
-    padding: 4 8px;
+    padding: 4px 8px;
 }
 
 /* Image Columns */
@@ -77,12 +97,19 @@
 }
 
 body {
-    font-family: Arial;
-    background-image: url("Backgrounds/IMG_5050.JPG");
-	background-size: cover;
+    background-image: url("Backgrounds/paraBack.JPG");
+    background-position: left top;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 2015px 434px;
+    background-color: rgb(90,119,168);
     font-family: 'Lato', sans-serif;
+}
+
+@media screen and (min-width: 2015px) {
+    body {
+        background-size: 100% 434px;
+    }
 }
 
 .flexcontainer {
@@ -203,12 +230,12 @@ li a:hover { /*:not(.active)*/
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.4s;
 }
 
 .activeAcc, .accordion:hover {
-    background-color: #eee;
+    background-color: rgb(153, 214, 255);
 }
 
 .accordion:after {
@@ -230,5 +257,5 @@ li a:hover { /*:not(.active)*/
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    border-left: 3px solid #eee;
+    border-left: 3px solid rgb(153, 214, 255);
 }

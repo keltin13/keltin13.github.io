@@ -3,6 +3,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <title>Keltin's Website</title>
     </head>
     <body>
@@ -10,16 +11,73 @@
             <li><a href="index.html">Me</a></li>
             <li><a href="map.html">Map</a></li>
 			<li><a href="photos.html">Photos</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="academics.html">Academics</a></li>
+            <li><a class="active" href="academics.html">Academics</a></li>
             <li><a href="extras.html">Extras</a></li>
-            <li><a class="active" href="dreams.html">Dreams</a></li>
+            <li><a href="dreams.html">Dreams</a></li>
 		</ul>
-        <div class="title">Keltin</div>
-        <div class="subtitle">You can call this my HTML resume. Thanks for visiting.</div>
-        <div class="row">
-            <div class="column">
+        <div class="title">Extracurriculars</div>
+        <div class="subtitle">There is more to me than school, much more.</div>
+        <div class="flexcontainer">
+            <div class="row">
+                <div class="column33">
+                    <img src="Extras/IMG_4958.JPG" style="width:100%;">
+                </div>
+                <div class="column67" style="margin-top:8px">
+                    <button class="accordion" style="font-size:30px">College</button>
+                    <div class="panel">
+                        <div class="sectiontext" style="font-size: 18px">
+                            After high school I plan on attending a four-year university. What I am looking for in a college is a school that will give me a great education, provide
+                            a wide range of opportunities for expanding my horizons, and is located somewhere reasonably close to some sort of relatives. A university that is strong in
+                            my area of study is the most important factor for me, but I don't want to be confined to my major; I think having a wide range of skills and understanding is
+                            extremely valuable. I would like to be near family (~1-3 hours by car) just so that if something happens I know I will have people who care about me nearby.
+                            For a major I am considering statistics, applied mathematics, mathmatical and computational sciences, etc., anything that will set me up for a career in data
+                            science.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column33">
+                    <img src="Extras/IMG_4958.JPG" style="width:100%;">
+                </div>
+                <div class="column67" style="margin-top:8px">
+                    <button class="accordion" style="font-size:30px">Career</button>
+                    <div class="panel">
+                        <div class="sectiontext" style="font-size: 18px">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:8px">
+                <div class="column33">
+                    <img src="Extras/IMG-0162.jpeg" style="width:100%">
+                </div>
+                <div class="column67">
+                    <button class="accordion" style="font-size:30px">Life</button>
+                    <div class="panel">
+                        <div class="sectiontext" style="font-size: 18px">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("activeAcc");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
