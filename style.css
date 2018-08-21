@@ -97,7 +97,7 @@
 }
 
 body {
-    background-image: url("Backgrounds/paraBack.JPG");
+    background-image: url("Backgrounds/paraBack.jpg");
     background-position: left top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -258,4 +258,20 @@ li a:hover { /*:not(.active)*/
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-left: 3px solid rgb(153, 214, 255);
+}
+
+.dreamHead {
+    font-size:45px;
+    padding: 2 4px;
+    margin: 0 20px;
+    border-bottom: 3px solid rgb(90,119,168);
+}
+
+.dreamBody {
+    width:100%;
+    text-align: left;
+    padding: 4px 20px;
+    font-size:20px;
+    margin-left: 35px;
+    border-left: 3px solid rgb(90,119,168);
 }
