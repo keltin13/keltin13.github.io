@@ -28,6 +28,10 @@ a {
     color: #405C69;
 }
 
+b {
+    font-weight: bold !important;
+}
+
 /* ######### Header ######### */
 .page_header {
   overflow: hidden;
