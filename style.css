@@ -1,141 +1,173 @@
-.title {
-    margin-top: 110px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-    height: 50px;
-    font-size: 50px;
-    color: white;
-}
-
-.subtitle {
-    margin-top: 20px;
-    margin-bottom: 160px;
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-    height: 50px;
-    font-size: 15px;
-    color: white;
-}
-
-.column75 {
-    -ms-flex: 75%;
-    flex: 75%;
-    max-width: 75%;
-    padding: 0 4px;
-}
-
-.column50 {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
-}
-
-.column25 {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column67 {
-    -ms-flex: 67%;
-    flex: 67%;
-    max-width: 67%;
-    padding: 0 4px;
-    margin-top: 8px;
-}
-
-.column33 {
-    -ms-flex: 33%;
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
-}
-
-.column25 {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-@media screen and (max-width: 800px) {
-    .column67, .column33, .column75, .column25 {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 4px;
-    }
-}
-
-.column33 img, .column25 img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-.sectionhead {
-    font-style: bold;
-    font-size: 35px;
-    color: black;
-    padding: 4 8px;
-}
-
-.sectiontext {
-    font-size: 25px;
-    color: black;
-    padding: 4px 8px;
-}
-
-/* Image Columns */
+/*
+Color Pallete:
+ - Subtle Red, #A12F2B
+ - Medium Slate Grey, #405C69
+ - Light Steel Blue, #C0CCCE
+ - Dark Slate Grey, #27343A
+ - Light Slate Grey, #88A8B5
+ - Off-white, #EAECF0
+ - Fuscia, #995D81
+*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    height: 100%;
 }
 
 body {
-    background-image: url("Backgrounds/paraBack.jpg");
-    background-position: left top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 2015px 434px;
-    background-color: rgb(90,119,168);
+    background-color: #EAECF0;
     font-family: 'Lato', sans-serif;
+    margin: 0px;
+    height: 100%;
 }
 
-@media screen and (min-width: 2015px) {
-    body {
-        background-size: 100% 434px;
+a {
+    color: #405C69;
+}
+
+/* ######### Header ######### */
+.page_header {
+  overflow: hidden;
+  background-color: #EAECF0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("IMG_6581.jpg");
+  background-position: left top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.page_title {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: #EAECF0;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* ####### Body Wrapper ######### */
+.page_body {
+    padding-top: 150px;
+    padding-bottom: 5px;
+}
+
+/* ######## Menu Column ########## */
+.sidenav {
+    width: 30%;
+    position: fixed;
+    text-align: right;
+}
+
+.sidenav a {
+    padding: 0px 80px 12px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #405C69;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #27343A;
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+    .sidenav a {
+        padding: 6px 0px 6px 0px;
     }
 }
 
-.flexcontainer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background-color: white;
-    border-radius: 2px;
+/* ####### Main content ######### */
+.main_wrap {
+    width: 70%;
+    margin-left: 30%;
+    color: #405C69;
+    font-size: 20px;
 }
 
-.row {
+.main_wrap > div {
+    padding: 0px 90px 10px 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .main_wrap {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .main_wrap > div {
+        padding: 5px 40px 5px 40px;
+    }
+}
+
+/* ######## Pill Buttons ###### */
+.button {
+    background-color: #A12F2B;
+    border: none;
+    color: #C0CCCE;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px 2px 15px 0px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #405C69;
+  color: #88A8B5;
+}
+
+/* ##### Bulleted List ####### */
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* ######### Map Warning ########## */
+@media screen and (max-width: 768px) {
+    .mapdiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .map_error {
+        display: none;
+        text-align: center;
+    }
+}
+
+/* ########### Photo Gallery ########## */
+.gallery {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 4px;
-    background-color: white;
-    border-radius: 2px;
 }
 
 .column {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0px 4px;
 }
 
 .column img {
@@ -143,11 +175,23 @@ body {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 800px) {
+.column img:hover {
+    transform: scale(1.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 992px) {
     .column {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column img:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
 
@@ -159,132 +203,51 @@ body {
     }
 }
 
-/* Header */
-
-a {
-	color: white;
+/* ##### Event Boxes ###### */
+.event_gallery {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.event {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 15px 25px 0px 5px;
 }
 
-li a {
-	display: block;
-    padding: 8px;
-	text-decoration: none;
-	background-color: transparent;
-    border-bottom: 1px solid transparent;
-    font-size: 16px;
+.event a {
+    text-decoration: none;
 }
 
-li a.active {
-    background-color: transparent;
-    color: white;
-    border-bottom: 1px solid transparent;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	overflow: hidden;
-	background-color: transparent;
-    border-radius: 2px;
-}
-
-li {
-    float: left;
-}
-
-li a:hover { /*:not(.active)*/
-    background-color: transparent;
-    border-bottom: 1px solid white;
-	color: white;
-}
-
-@media screen and (max-width: 760px) {
-    li a {
-        font-size: 20px
-    }
-    .title {
-        margin-top: 108px;
-    }
-    .subtitle {
-        margin-bottom: 157px;
+@media screen and (max-width: 992px) {
+    .event {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-/* Stat Boxes */
-
-.statbox {
-    background-color: blue;
-    border-radius: 2px;
-    margin-top: 8px;
-    vertical-align: middle;
-    text-align: center;
-    padding: 4px;
+@media screen and (max-width: 768px) {
+    .event {
+        padding: 15px;
+    }
 }
 
-.stat {
-    font-size: 120px;
-    font-style: bold;
-    color: white;
+@media screen and (max-width: 600px) {
+    .event {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
-.statdescr {
-    font-size: 20px;
-    color: white;
-}
-
-/* Accordion Folder */
-.accordion {
-    background-color: white;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 20px;
-    transition: 0.4s;
-}
-
-.activeAcc, .accordion:hover {
-    background-color: rgb(153, 214, 255);
-}
-
-.accordion:after {
-    content: '\002B';
-    color: #777;
+.event_name {
     font-weight: bold;
-    float: right;
-    margin-left: 5px;
+    font-size: 15px;
 }
 
-.activeAcc:after {
-    content: "\2212";
-}
-
-.panel {
-    /*padding: 0 18px;*/
-    margin: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border-left: 3px solid rgb(153, 214, 255);
-}
-
-.dreamHead {
-    font-size:45px;
-    padding: 2 4px;
-    margin: 0 20px;
-    border-bottom: 3px solid rgb(90,119,168);
-}
-
-.dreamBody {
-    width:100%;
-    text-align: left;
-    padding: 4px 20px;
-    font-size:20px;
-    margin-left: 35px;
-    border-left: 3px solid rgb(90,119,168);
+.event_disc {
+    font-size: 15px;
 }

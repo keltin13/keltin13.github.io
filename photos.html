@@ -1,83 +1,127 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <title>Keltin's Website</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var lazyImages = [].slice.call(document.querySelectorAll("#lazy"));
+
+                if ("IntersectionObserver" in window) {
+                    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                let lazyImage = entry.target;
+                                lazyImage.src = lazyImage.dataset.src;
+                                lazyImage.classList.remove("lazy");
+                                lazyImageObserver.unobserve(lazyImage);
+                            }
+                        });
+                    });
+                    lazyImages.forEach(function(lazyImage) {
+                        lazyImageObserver.observe(lazyImage);
+                    });
+                } else {
+                    // Possibly fall back to a more compatible method here
+                }
+            });
+        </script>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Me</a></li>
-            <li><a href="map.html">Map</a></li>
-			<li><a class="active" href="photos.html">Photos</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="extras.html">Extras</a></li>
-            <li><a href="dreams.html">Dreams</a></li>
-		</ul>
-        <div class="title">Photography</div>
-        <div class="subtitle">I like to say I dabble in photogrophay, I guess this proves it.</div>
-        <div class="row" style="padding-bottom:8px">
-            <div class="column">
-                <img src="Photos/IMG_1298.JPG" style="width:100%">
-                <img src="Photos/IMG_0034.JPG" style="width:100%">
-                <img src="Photos/IMG_0047.JPG" style="width:100%">
-                <img src="Photos/IMG_0051.JPG" style="width:100%">
-                <img src="Photos/IMG_0052.JPG" style="width:100%">
-                <img src="Photos/IMG_0054_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0058.JPG" style="width:100%">
-                <img src="Photos/IMG_0074.JPG" style="width:100%">
-                <img src="Photos/IMG_0076_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0098.PNG" style="width:100%">
-                <img src="Photos/IMG_0121.JPG" style="width:100%">
-                <img src="Photos/IMG_0125_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0706_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_3912_SM.jpg" style="width:100%">
+        <div class="page_header">
+            <span class="page_title">Photos</span>
+        </div>
+        <div class="page_body">
+            <div class="sidenav" id="sidenav">
+                <a href="index.html">Me</a>
+                <a href="map.html">Map</a>
+    			<a href="photos.html">Photos</a>
+                <a href="projects.html">Projects</a>
+                <a href="more.html">More</a>
             </div>
-            <div class="column">
-                <img src="Photos/IMG_0710_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0708.JPG" style="width:100%">
-                <img src="Photos/IMG_0712_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0759.JPG" style="width:100%">
-                <img src="Photos/IMG_1705_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1279 (2).JPG" style="width:100%">
-                <img src="Photos/IMG_1286_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_0029.JPG" style="width:100%">
-                <img src="Photos/IMG_1345_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1354_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1416_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1431_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1629_SM.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="Photos/IMG_1231_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1727_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1863_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1956_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_1957_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_2357_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_2376_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_2547_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_2691_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_3678_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_3727_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_3769_SM.jpg" style="width:100%">
-                <img src="Photos/GOPR0113_SM.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="Photos/IMG_3938_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_4923_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_4948.JPG" style="width:100%">
-                <img src="Photos/IMG_5033_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5043_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5044_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5054.JPG" style="width:100%">
-                <img src="Photos/IMG_5065_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5097_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5119_SM.jpg" style="width:100%">
-                <img src="Photos/IMG_5164.JPG" style="width:100%">
-                <img src="Photos/IMG_5165.JPG" style="width:100%">
-                <img src="Photos/IMG_E5130_SM.jpg" style="width:100%">
-                <img src="Photos/GOPR0079_SM.jpg" style="width:100%">
+            <div class="main_wrap">
+                <div>Everyone with a smartphone could be a photographer. I just have a place to put my pictures.</div>
+                <div>
+                    <div class="gallery">
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1298.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_E5405_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_7260_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_7227_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6607_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6603_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6443_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6596_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6483_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6569_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0034.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0051.JPG" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0710_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_4948.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6444_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6602_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6407_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5965_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6032_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5991_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0712_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_2357_SM.jpg" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1231_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1279 (2).JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_6042_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5931_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5918_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5635_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5631_SM.png" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5630_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0708.JPG" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0052.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0058.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0074.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0098.PNG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_0706_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_3938_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_4923_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5033_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5043_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_E5130_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1705_SM.jpg" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1286_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1345_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1354_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1416_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1431_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1629_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5044_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5065_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/GOPR0079_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1863_SM.jpg" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_2376_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_2547_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_2691_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_3727_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_3769_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/GOPR0113_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5164.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5165.JPG" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_5119_SM.jpg" style="width:100%">
+                            <img id="lazy" src="Photos/a_lazy_load.png" data-src="Photos/IMG_1957_SM.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <title>Keltin's Website</title>
+    </head>
+    <body>
+        <div class="page_header">
+            <span class="page_title">Projects</span>
+        </div>
+        <div class="page_body">
+            <div class="sidenav" id="sidenav">
+                <a href="../index.html">Me</a>
+                <a href="../map.html">Map</a>
+                <a href="../photos.html">Photos</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../more.html">More</a>
+            </div>
+            <div class="main_wrap">
+                <div><b>Madden Playcalling</b></div>
+                <div>
+                    As I mentioned on the home page of this website, I am a Kaggler. Kaggle is a website that hosts data science competitions,
+                    with a wide variety of topics and prizes, and I enjoy trying my hand at some of the contests. For the Recognizing Faces in
+                    the Wild competition, the topic of this page, the task was to determine whether two faces share a parent-child relationship
+                    from only two images.
+                </div>
+                <div>
+                    Early on in the competition, it became obvious that there was one method that was going to produce the best results. I chose
+                    to take a different approach, one that would not perform as well in the competition but was something I would find more interesting.
+                    I used a facial landmark predictor from DLib (demonstrated below) and two pretrained models, Facenet and VGGFace, to generate a
+                    vast array of features, and then determined which were the most effective by using Lasso logistic regression. The technique ended
+                    up with a best competition score of 0.709, but I placed 54th out of 563 with a score of 0.905 by using a weighted average of a number
+                    of other techniques.
+                </div>
+                <div><img src="face_detection.jpg" style="width:100%; margin: 5px 0px;"></div>
+                <div>
+                    The 'kernel' I created detailing my work, as well as much more information about the competition, can be found on Kaggle's website
+                    <a href="https://www.kaggle.com/keltingrimes/feature-generation-and-analysis" target="_blank">here</a>.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

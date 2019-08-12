@@ -1,16 +1,14 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <title>Keltin's Website</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link rel="stylesheet" href="Map/ammap.css" type="text/css">
         <script src="Map/ammap.js" type="text/javascript"></script>
-        <!-- map file should be included after ammap.js -->
 		<script src="Map/worldLow.js" type="text/javascript"></script>
-
         <script>
             var targetSVG = "M-5,0a5,5 0 1,0 10,0a5,5 0 1,0 -10,0";
             var planeSVG = "M19.671,8.11l-2.777,2.777l-3.837-0.861c0.362-0.505,0.916-1.683,0.464-2.135c-0.518-0.517-1.979,0.278-2.305,0.604l-0.913,0.913L7.614,8.804l-2.021,2.021l2.232,1.061l-0.082,0.082l1.701,1.701l0.688-0.687l3.164,1.504L9.571,18.21H6.413l-1.137,1.138l3.6,0.948l1.83,1.83l0.947,3.598l1.137-1.137V21.43l3.725-3.725l1.504,3.164l-0.687,0.687l1.702,1.701l0.081-0.081l1.062,2.231l2.02-2.02l-0.604-2.689l0.912-0.912c0.326-0.326,1.121-1.789,0.604-2.306c-0.452-0.452-1.63,0.101-2.135,0.464l-0.861-3.838l2.777-2.777c0.947-0.947,3.599-4.862,2.62-5.839C24.533,4.512,20.618,7.163,19.671,8.11z";
@@ -33,109 +31,125 @@
                         { latitudes: [35.7796, 47.3769], longitudes: [-78.6382, 8.5417]},
                         { latitudes: [35.7796, 39.0968], longitudes: [-78.6382,  -120.0324]},
                         { latitudes: [35.7796, 49.9456], longitudes: [-78.6382, 11.5713]},
-                        { latitudes: [35.7796, 36.0544], longitudes: [-78.6382, -112.1401]}],
+                        { latitudes: [35.7796, 36.0544], longitudes: [-78.6382, -112.1401]},
+                        { latitudes: [35.7796, 45.5017], longitudes: [-78.6382, -73.5673]},
+                        { latitudes: [35.7796, 53.4808], longitudes: [-78.6382, -2.2426]}],
                     images: [{
                         id: "raleigh",
                         svgPath: targetSVG,
                         title: "Raleigh, NC: Home",
-                        description: "<img src='Map/IMG_4689_SM.jpg' width='200px'>",
+                        description: "<img src='Map/IMG_4689_SM.jpg' width='150px'>",
                         latitude: 35.7796,
                         longitude: -78.6382,
-                        scale: 2
+                        scale: 1.5
                     }, {
                         svgPath: targetSVG,
                         title: "Tokyo, Japan",
                         description: "<img src='Map/IMG_1286_SM.jpg' width='200px'>",
                         latitude: 35.6895,
                         longitude: 139.6917,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Daegu, South Korea",
                         description: "<img src='Map/IMG_5226_SM.jpg' width='200px'>",
                         latitude: 35.8714,
                         longitude: 128.6014,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Aachen, Germany",
-                        description: "<img src='Map/IMG_3938_SM.jpg' width='200px'>",
+                        description: "<img src='Map/IMG_3938_SM.jpg' width='150px'>",
                         latitude: 50.7753,
                         longitude: 6.0839,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Verona, Italy",
                         description: "<img src='Map/DSC00633.JPG' width='200px'>",
                         latitude: 45.4384,
                         longitude: 10.9916,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Venice, Italy",
                         description: "<img src='Map/DSC00738.JPG' width='200px'>",
                         latitude: 45.4408,
                         longitude: 12.3155,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Kyoto, Japan",
                         description: "<img src='Map/IMG_1584_SM.jpg' width='200px'>",
                         latitude: 35.0116,
                         longitude: 135.7680,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Sydney, Australia",
                         description: "<img src='Map/IMG_0044.JPG' width='200px'>",
                         latitude: -33.8688,
                         longitude: 151.2093,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Grand Cayman",
                         description: "<img src='Map/DSC_1284_SM.jpg' width='200px'>",
                         latitude: 19.3222,
                         longitude: -81.2409,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Zurich, Switzerland",
                         description: "<img src='Map/DSC00608.JPG' width='200px'>",
                         latitude: 47.3769,
                         longitude: 8.5417,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Lake Tahoe, CA",
                         description: "<img src='Map/IMG_5044_SM.jpg' width='200px'>",
                         latitude: 39.0968,
                         longitude: -120.0324,
-                        scale: 1.5
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Grand Canyon, AZ",
                         description: "<img src='Map/DSC00664_SM.jpg' width='200px'>",
                         latitude: 36.0544,
                         longitude: -112.1401,
-                        scale: 1.5
+                        scale: 1
+                    }, {
+                        svgPath: targetSVG,
+                        title: "Manchester, England",
+                        description: "<img src='Map/IMG_7282_SM.jpg' width='200px'>",
+                        latitude: 53.4808,
+                        longitude: -2.2426,
+                        scale: 1
+                    }, {
+                        svgPath: targetSVG,
+                        title: "Montreal, Canada",
+                        description: "<img src='Map/IMG_6607_SM.jpg' width='200px'>",
+                        latitude: 45.5017,
+                        longitude: -73.5673,
+                        scale: 1
                     }, {
                         svgPath: targetSVG,
                         title: "Bayreuth, Germany",
                         description: "<img src='Map/DSC01236.JPG' width='200px'>",
                         latitude: 49.9456,
                         longitude: 11.5713,
-                        scale: 1.5
+                        scale: 1
                     }]
                 },
                 areasSettings: {
-                    unlistedAreasColor: "#66b3ff"
+                    unlistedAreasColor: "#88A8B5"
                 },
                 imagesSettings: {
                     color: "#00000",
                     rollOverColor: "#00000",
                     selectable: false,
-                    balloonText: "<div style='font-size:14px'>[[title]]<br>[[description]]</div>"
+                    balloonText: "<div style='font-size:14px'>[[title]][[description]]</div>"
                 },
                 linesSettings: {
                     arc: 0, // this makes lines curved. Use value from -1 to 1
@@ -154,44 +168,26 @@
             });
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-                        // Store hash
-                        var hash = this.hash;
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function(){
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-        </script>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Me</a></li>
-            <li><a class="active" href="map.html">Map</a></li>
-			<li><a href="photos.html">Photos</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="extras.html">Extras</a></li>
-            <li><a href="dreams.html">Dreams</a></li>
-		</ul>
-        <div class="title">Travel</div>
-        <div class="subtitle" style="margin-bottom:20px; height: 20px;">I have been lucky enough to travel all over the world, here are some of the highlights.</div>
-        <div style="margin: auto; width: 50px; margin-bottom: 119px;"><a href="#map"><i class="fas fa-chevron-circle-down" style="font-size: 50px; color: white;"></i></a></div>
-        <div class="row" id="map" style="padding-top:3px; padding-bottom:3px;">
-            <div id="mapdiv" style="width: 100%; background-color:white; height: 96vh;"></div>
+        <div class="page_header">
+            <span class="page_title">Map</span>
+        </div>
+        <div class="page_body">
+            <div class="sidenav" id="sidenav">
+                <a href="index.html">Me</a>
+                <a href="map.html">Map</a>
+    			<a href="photos.html">Photos</a>
+                <a href="projects.html">Projects</a>
+                <a href="more.html">More</a>
+            </div>
+            <div class="main_wrap">
+                <div>I have been lucky enough to travel all over the world, here are some of the highlights.</div>
+                <div id="map">
+                    <div class="mapdiv" id="mapdiv" style="width: 100%; background-color:#405C69; height: 70vh;"></div>
+                    <div class="map_error">Please use a wider device to access the map. Touchscreens are not recommended.</div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
