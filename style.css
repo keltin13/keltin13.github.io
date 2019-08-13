@@ -28,16 +28,14 @@ a {
     color: #405C69;
 }
 
-b {
-    font-weight: bold !important;
-}
-
 /* ######### Header ######### */
 .page_header {
   overflow: hidden;
   background-color: #EAECF0;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100px;
   background-image: url("IMG_6581.JPG");
