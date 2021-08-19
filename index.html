@@ -1,44 +1,215 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato:regular,bold" rel="stylesheet">
-        <title>Keltin's Website</title>
-    </head>
-    <body>
-        <div class="page_header">
-            <span class="page_title">Keltin</span>
-        </div>
-        <div class="page_body">
-            <div class="sidenav" id="sidenav">
-                <a href="index.html">Me</a>
-                <!--<a href="map.html">Map</a>
-    			<a href="photos.html">Photos</a>-->
-                <a href="projects.html">Projects</a>
-                <a href="more.html">More</a>
+    <title>Keltin Grimes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
+    <body class="w3-light-grey">
+
+    <!-- Navigation bar with social media icons -->
+    <div class="w3-bar w3-dark-blue">
+      <a href="https://www.linkedin.com/in/keltin-grimes/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/keltin13" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+      <a href="https://www.kaggle.com/keltingrimes" target="_blank" class="w3-bar-item w3-button"><b>k</b></a>
+    </div>
+
+    <div>
+
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-48 w3-black dots">
+        <h1 class="w3-xxxlarge w3"><b>KELTIN GRIMES</b></h1>
+        <h6>Welcome to my portfolio</h6>
+      </header>
+
+      <!-- Grid -->
+      <div class="w3-row w3-padding w3-border">
+
+          <!-- About/Information menu -->
+          <div class="w3-col l4">
+            <!-- About Card -->
+            <div class="w3-white w3-margin">
+              <div class="w3-container w3-dark-blue">
+                <h2>About Me</h2>
+                <p>
+                    I am a sophomore at Carnegie Mellon University majoring in Statistics and Machine Learning, with a minor
+                    in Computer Science.
+                    I love all things data, machine learning, and artificial intelligence.
+                </p>
+              </div>
             </div>
+            <hr class="w3-border-light-grey">
+
+            <!-- Resume -->
+            <div class="w3-white w3-margin">
+              <div class="w3-container w3-padding w3-dark-blue">
+                <h3>Resume Highlights</h3>
+              </div>
+              <ul class="w3-ul">
+                  <li class="w3-padding-16">
+                    <span class="w3-large">4.0 GPA</span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <span class="w3-large">Dietrich College Dean's List</span>
+                    <br>
+                    <span>with Honors, Fall 2019 to Spring 2021</span>
+                  </li>
+                <li class="w3-padding-16">
+                  <span class="w3-large">Leadership Challenge Winner</span>
+                  <br>
+                  <span>American Statistical Association, 2019</span>
+                </li>
+                <li class="w3-padding-16">
+                  <span class="w3-large">CMU Data Science Club Member</span>
+                  <br>
+                  <span>Winner of the 2019 End-of-Semester Data Challenge</span>
+                </li>
+                <li class="w3-padding-16">
+                  <span class="w3-large">IRONMAN 70.3 Finisher </span>
+                  <br>
+                  <span>Ohio IRONMAN 70.3, 2021</span>
+                </li>
+                <li class="w3-padding-16">
+                  <span><a href="Keltin Grimes Resume.pdf" target="_blank">Download my full resume</a></span>
+                </li>
+              </ul>
+            </div>
+            <hr>
+
+            <!-- Follow Me
+            <div class="w3-white w3-margin">
+              <div class="w3-container w3-padding w3-black">
+                <h4>Follow Me</h4>
+              </div>
+              <div class="w3-container w3-xlarge w3-padding">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+              </div>
+            </div>
+            <hr> -->
+
+          <!-- END About/Intro Menu -->
+          </div>
+
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
             <div class="main_wrap">
-                <div><b>Keltin Grimes</b></div>
-                <div>
-                    I am a student at Carnegie Mellon University majoring in Statistics and Machine Learning. Previously, I attended Enloe
-                    high school in Raleigh, North Carolina, the city I currentlly call home. Data science has been my passion since I was
-                    first introduced to it as a sophomore in high school.
+                <div class="event_gallery">
+                    <div class="event">
+                        <a href="posts/8/quick-adaptation-tool.html">
+                            <img src="posts/8/alexa_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>quick adaptation tool |</b>
+                                My intern project at Amazon.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/7/ode-to-transformer.html">
+                            <img src="posts/7/poem_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>ode to transformer |</b>
+                                A poem-writing AI.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/6/terrace.html">
+                            <img src="posts/6/las_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>terrace |</b>
+                                My research project at LAS.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/5/salvation.html">
+                            <img src="posts/5/tp3_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>salvation |</b>
+                                My 15-112 term project.
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div>
-                    In my free time I love to travel, Kaggle, play soccer and the violin, golf, ski, and cheer on Kentucky basketball and
-                    the Pittsburg Steelers. Please explore this website for a short introduction to me.
+                    <hr style="border: 2px solid #B3B3B3; border-radius: 2px; margin: 15px 0px 15px 15px;">
                 </div>
-                <div>
-                    Please look around the menu to the left, check out the links below, or review my
-                    <a href="Keltin/Keltin_Grimes_resume.pdf" target="_blank">resume</a>.
-                </div>
-                <div>
-                    <a class="button" href="Keltin/education_testing.html">Education and Testing</a>
-                    <a class="button" href="Keltin/awards_publications.html">Awards and Publications</a>
+                <!-- High School -->
+                <div style="margin-left: 30px">High School</div>
+                <div class="event_gallery">
+                    <div class="event">
+                        <a href="posts/4/kinship-classifier.html">
+                            <img src="posts/4/face_detection_square.jpg" style="width:100%">
+                            <div class="event_disc">
+                                <b>kinship classifier |</b>
+                                Predicting relationships from images on Kaggle.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/3/asset-manager.html">
+                            <img src="posts/3/am_ss_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>asset manager |</b>
+                                Interactive asset database for a university department.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/2/photoconversion.html">
+                            <img src="posts/2/catalyst_efficiencies_square.jpeg" style="width:100%">
+                            <div class="event_disc">
+                                <b>photoconversion |</b>
+                                My month-long internship at a South Korean university.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/1/madden-playcalling.html">
+                            <img src="posts/1/madden_screen_square.png" style="width:100%">
+                            <div class="event_disc">
+                                <b>madden playcalling |</b>
+                                Simulating football games at Laber Labs.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <a href="posts/0/microbial-inference.html">
+                            <img src="posts/0/sample_map_square.jpeg" style="width:100%">
+                            <div class="event_disc">
+                                <b>microbial inference |</b>
+                                Inferring home features from microbial fungi.
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+        <!-- END BLOG ENTRIES -->
         </div>
+
+      <!-- END GRID -->
+      </div>
+
+    <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-blue" style="padding:32px">
+
+    </footer>
+
     </body>
 </html>
