@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <!-- Split posts into sections based on dates in _data/dates.yml -->
+    {%- for date in site.data.dates -%}
+      <!-- Get start date -->
+      {%- assign start_date = date.date | date: '%Y-%m-%d' -%}
+      <div class="gallery_wrapper">
+
+        <!-- Get next date to create range -->
+        {%- assign prev_index = forloop.index0 | minus: 1 -%}
+        {%- if forloop.index0 == 0 -%}
+          {%- assign end_date = '9999-01-01' | date: '%Y-%m-%d' %}
+        {%- else -%}
+          {%- assign end_date = site.data.dates[prev_index].date | date: '%Y-%m-%d' -%}
+          <hr class="section_hr">
+          <div class="section_title"><strong>{{ date.name }}</strong></div>
+        {%- endif -%}
+
+        <!-- Display posts within date range -->
+        <div class="event_gallery">
+          {%- for post in site.posts -%}
+            {%- assign post_date = post.date | date: '%Y-%m-%d' -%}
+            {% if post_date < end_date and post_date >= start_date %}
+              <div class="event">
+                <a href="{{ post.url | relative_url }}">
+                  <img src="{{ post.ad_image_path }}" style="width:100%">
+                  <div class="event_disc">
+                    <b>{{ post.ad_title }} |</b>
+                    {{ post.ad_description }}
+                  </div>
+                </a>
+              </div>
+            {% endif %}
+          {%- endfor -%}
+        </div>
+
+      </div>
+
+    {%- endfor -%}
+
+  {%- endif -%}
+
+</div>

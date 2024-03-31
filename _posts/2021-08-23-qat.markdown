@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "ASR Quick Adaptation Tool"
+date:   2021-03-07 15:56:18 -0500
+ad_image_path: /assets/post_assets/2021-08-23-qat/alexa_square.png
+ad_title: quick adaptation tool
+ad_description: My intern project at Amazon.
+---
+
+For the summer of 2021, I was a Software Development Engineer at Amazon, working in the Alexa Shopping Automatic Speech Recognition (ASR) division. The data scientists I worked with regularly have to go through a long process of adapting the production Alexa ASR model to new or underperforming use-cases. A customer would come to us with some word or phrase that ASR model was not recognizing often enough, and the data scientists had to fine-tune the model to ensure the word or phrase was properly recognized. This process took a long time, mostly because of the need to obtain human voices from a data provider.
+
+The ASR Quick Adaptation Tool, which I developed during my time at Amazon, automated the inital steps of this process, including the baseline model evaluation to assess current performance. Most importantly, it enabled the user to use synthetically generated audio. This meant the necessary audio could be acquired in a matter of hours, rather than weeks. Our experiments showed that the synthetically generated audio was of sufficient quality to replace the human audio, so this elimated the largest bottleneck in the adaptation process.
+
+I created the tool as a command line interface using Python. The development process involved connecting multiple APIs together and interfacing with cloud storage, all within a secure computing environment.

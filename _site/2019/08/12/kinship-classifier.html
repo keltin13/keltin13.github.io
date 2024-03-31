@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kinship Classifier | Keltin Grimes</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Kinship Classifier" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As I mentioned on the home page of this website, I am a Kaggler. Kaggle is a website that hosts data science competitions, with a wide variety of topics and prizes, and I enjoy trying my hand at some of the contests. For the Recognizing Faces in the Wild competition, the topic of this page, the task was to determine whether two faces share a parent-child relationship from only two images." />
+<meta property="og:description" content="As I mentioned on the home page of this website, I am a Kaggler. Kaggle is a website that hosts data science competitions, with a wide variety of topics and prizes, and I enjoy trying my hand at some of the contests. For the Recognizing Faces in the Wild competition, the topic of this page, the task was to determine whether two faces share a parent-child relationship from only two images." />
+<link rel="canonical" href="http://localhost:4000/2019/08/12/kinship-classifier.html" />
+<meta property="og:url" content="http://localhost:4000/2019/08/12/kinship-classifier.html" />
+<meta property="og:site_name" content="Keltin Grimes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-12T16:56:18-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kinship Classifier" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-08-12T16:56:18-04:00","datePublished":"2019-08-12T16:56:18-04:00","description":"As I mentioned on the home page of this website, I am a Kaggler. Kaggle is a website that hosts data science competitions, with a wide variety of topics and prizes, and I enjoy trying my hand at some of the contests. For the Recognizing Faces in the Wild competition, the topic of this page, the task was to determine whether two faces share a parent-child relationship from only two images.","headline":"Kinship Classifier","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/08/12/kinship-classifier.html"},"url":"http://localhost:4000/2019/08/12/kinship-classifier.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Keltin Grimes" /></head>
+<body><header class="site-header" role="banner">
+
+  <!-- Navigation bar with social media icons -->
+  <div class="w3-bar w3-black dots">
+    <a href="https://www.linkedin.com/in/keltin-grimes/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/keltin13" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+  </div>
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Keltin Grimes</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">Posts</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Kinship Classifier</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-08-12T16:56:18-04:00" itemprop="datePublished">Aug 12, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>As I mentioned on the home page of this website, I am a Kaggler. Kaggle is a website that hosts data science competitions,
+with a wide variety of topics and prizes, and I enjoy trying my hand at some of the contests. For the Recognizing Faces in
+the Wild competition, the topic of this page, the task was to determine whether two faces share a parent-child relationship
+from only two images.</p>
+
+<p>Early on in the competition, it became obvious that there was one method that was going to produce the best results. I chose
+to take a different approach, one that would not perform as well in the competition but was something I would find more interesting.
+I used a facial landmark predictor from DLib (demonstrated on a sibling relationship below) and two pretrained models, Facenet and VGGFace, to generate a
+vast array of features, and then determined which were the most effective by using Lasso logistic regression. The technique ended
+up with a best competition score of 0.709, but I placed 54th out of 563 with a score of 0.905 by using a weighted average of a number
+of other techniques.</p>
+
+<div><img src="/assets/post_assets/2019-08-12-kinship-classifier/face_detection.jpg" style="width:75%; margin: 5px auto; display: block;" /></div>
+
+<p>The ‘kernel’ I created detailing my work, as well as much more information about the competition, can be found on Kaggle’s website
+<a href="https://www.kaggle.com/keltingrimes/feature-generation-and-analysis" target="_blank">here</a>.</p>
+
+  </div><a class="u-url" href="/2019/08/12/kinship-classifier.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Keltin Grimes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Keltin Grimes</li>firstname lastname at gmail dot com</ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/keltin13"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">keltin13</span></a></li><li><a href="https://www.linkedin.com/in/keltin-grimes"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">keltin-grimes</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the portfolio of Keltin Grimes. He is an AI/ML researcher at  Carnegie Mellon&#39;s Software Engineering Institute and broadly interested in AI Safety.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

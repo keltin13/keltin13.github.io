@@ -1,0 +1,33 @@
+/**
+ * Poem display
+ */
+.poem_title {
+  font: 24px Baskerville, 'Palatino Linotype', 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.poem_body {
+  font: 18px Baskerville, 'Palatino Linotype', 'Times New Roman', Times, serif;
+  margin-bottom: 20px
+}
+
+/**
+ * Custom CSS background
+ */
+.dots {
+  background: linear-gradient(to right top, #353535 2%, rgba(244, 205, 165, 0) 2%) 2.5em 0,
+  linear-gradient(to left top, #353535 2%, rgba(244, 205, 165, 0) 2%) 2.5em 0,
+  linear-gradient(to right bottom, #353535 2%, rgba(244, 205, 165, 0) 2%) 2.5em 0,
+  linear-gradient(to left bottom, #353535 2%, rgba(244, 205, 165, 0) 2%) 2.5em 0,
+  linear-gradient(to right top, #353535 2%, rgba(244, 205, 165, 0) 2%) 0 2.5em,
+  linear-gradient(to left top, #353535 2%, rgba(244, 205, 165, 0) 2%) 0 2.5em,
+  linear-gradient(to right bottom, #353535 2%, rgba(244, 205, 165, 0) 2%) 0 2.5em,
+  linear-gradient(to left bottom, #353535 2%, rgba(93, 181, 164, 0) 2%) 0 2.5em,
+  radial-gradient(circle, rgba(60, 152, 158, 0) 52%, #353535 54%, #353535 55.5%,
+  rgba(60, 152, 158, 0) 55.5%, rgba(60, 152, 158, 0) 65%, #353535 66%, #353535 69%,
+  rgba(60, 152, 158, 0) 75%) 0 0, radial-gradient(circle, rgba(60, 152, 158, 0) 52%,
+  #353535 54%, #353535 55.5%, rgba(60, 152, 158, 0) 55.5%, rgba(60, 152, 158, 0) 65%,
+  #353535 66%, #353535 69%, rgba(60, 152, 158, 0) 75%) 2.5em 2.5em;
+  background-size: 5em 5em;
+  background-color: #5DB5A4;
+}
