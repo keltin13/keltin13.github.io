@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a Machine Learning Researcher at Carnegie Mellon University's Software Engineering Institute, working on research projects to help create robust, secure, and scalable AI/ML systems. I graduated from Carnegie Mellon University with a major in Statistics and Machine Learning, and an additional major in Computer Science. I love all things data, machine learning, and artificial intelligence. I've been in to triathlons the past few years (I raced a half-Ironman!), and I also like playing chess, skiing, philosophy, and playing soccer, but it’s hard to pin me down to just one thing!
+I am a Machine Learning Researcher at Carnegie Mellon University's Software Engineering Institute, working on research projects to help create robust, secure, and scalable AI/ML systems. I graduated from Carnegie Mellon University with a major in Statistics and Machine Learning, and an additional major in Computer Science. I love all things data, machine learning, and artificial intelligence. I've been in to triathlons the past few years (I raced a half-Ironman!), and I also like playing chess, skiing, philosophy, and playing soccer, but it’s hard to pin me down to just one thing! You can find my resume [here](/assets/Keltin Grimes Resume.pdf).
 
 ## Publications
 
