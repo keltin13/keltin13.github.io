@@ -16,7 +16,7 @@ department. The SQL database holds a complex web of tables and the interface, ma
 allows for asset data to easily be added, accessed, deleted, and updated. Developed from April to September, 2018, the system
 now manages thousands of assets and continues to save the MSE Department time and resources.
 
-<img src="/assets/post_assets/2018-09-02-asset-manager/am_ss.png" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2018-09-02-asset-manager/am_ss.png">
 
 This screenshot is from the end of the development phase, before the code was migrated to NC State's secure servers.
 George Martell, the IT Manager, taught me SQL and PHP and otherwise helped me throughout the project.

@@ -17,7 +17,7 @@ U.S. fungal swabs to try and predict features about the home where it was taken,
 environment, and characteristics of the residents. Using a logistic regression model with LASSO to hande the thousands of different types
 of fungi, I was able to predict a number of features with &gt;90% accuracy.
 
-<img src="/assets/post_assets/2017-08-27-microbiome/sample_map.jpeg" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2017-08-27-microbiome/sample_map.jpeg">
 
 I presented my findings in a research poster at the 2017 State of North Carolina Undergraduate Research and Creativity Symposium titled
 “Inferring Home Features from Indoor and Outdoor Microbial Fungi”, which you can download a PDF of

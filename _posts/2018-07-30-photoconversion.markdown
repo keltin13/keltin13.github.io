@@ -11,7 +11,7 @@ From June 26 to July 27, 2018, I interned at the South Korean university Daegu-G
 
 In a break from my previous experience, I worked in the lab every day, setting up photocatalytic experiments and sythesizing samples. I was able to put my data science skills to use, however, as I wrote an R script to calculate and plot incremental efficiencies and derivitaves of the sample output, data that was an integral part of the paper that I co-authored on the subject.
 
-<img src="/assets/post_assets/2018-07-30-photoconversion/catalyst_efficiencies.jpeg" style="width:75%;">
+<img src="/assets/post_assets/2018-07-30-photoconversion/catalyst_efficiencies.jpeg">
 
 The paper below discusses the results of our reduced blue-titania photocatalyst, sensitized with bimetallic Cu–Pt nanoparticles, and its world-class sustained and peak efficiencies.
 

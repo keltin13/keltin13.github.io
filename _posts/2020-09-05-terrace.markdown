@@ -25,7 +25,7 @@ for maximizing the knowledge gained by each document. Second, a large neural net
 Since the training process for this model was slow, it was not suitable for real-time feedback, but it was important to update the application with high-accuracy
 predictions every so often.
 
-<img src="/assets/post_assets/2020-09-05-terrace/las.png" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2020-09-05-terrace/las.png">
 
 For any AI-powered service with non-technical users, it is important for the process to be interpretable as possible. To promote interpretablity, I did two
 key things. First, I embedded each document as a 2D vector, and plotted them as shown above. I then color-coded the points as to whether the models thought

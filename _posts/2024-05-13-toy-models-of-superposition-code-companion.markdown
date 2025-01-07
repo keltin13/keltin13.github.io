@@ -16,8 +16,8 @@ In the spring of 2024, I decided to go the distance and replicate every plot in 
 
 Here's a sneak peak at some of the plots (read TMS for context!):
 
-<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/feature_dimensionality_over_time.png" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/feature_dimensionality_over_time.png">
 
-<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/dimensions_per_feature.png" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/dimensions_per_feature.png">
 
-<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/feature_plot_3D.png" style="width:75%; margin: 5px auto; display: block;">
+<img src="/assets/post_assets/2024-05-13-toy-models-of-superposition-code-companion/feature_plot_3D.png">

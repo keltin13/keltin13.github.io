@@ -17,4 +17,4 @@ running 24 hours a day with more planned.
 I worked on the project from December, 2017 to April, 2018, creating data visualizations and writing Python scripts for various aspects
 of the complex system.
 
-<img src="/assets/post_assets/2018-02-21-madden-playcalling/madden_screen.png" alt="Madden Screenshot" style="width:75% ">
+<img src="/assets/post_assets/2018-02-21-madden-playcalling/madden_screen.png" alt="Madden Screenshot">
