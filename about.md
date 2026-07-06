@@ -8,10 +8,11 @@ I am a Machine Learning Researcher at Carnegie Mellon University's Software Engi
 
 ## Publications
 
-- Casper, Stephen, Jieun Yun, Joonhyuk Baek, Yeseong Jung, Minhwan Kim, Kiwan Kwon, Saerom Park **et al.** "The SaTML'24 CNN Interpretability Competition: New Innovations for Concept-Level Interpretability." arXiv preprint arXiv:2404.02949 (2024).
-    - 2nd-Place Solution at the 2024 IEEE SaTML CNN Interpretability Competition
-
-- **Grimes, Keltin**, Collin Abidi, Cole Frank, and Shannon Gallagher. "Gone but Not Forgotten: Improved Benchmarks for Machine Unlearning." Extended Abstract. Deep Learning Security and Privacy Workshop (2024).
+<ul class="pub-list">
+  {% for item in site.data.publications %}
+    {% include publication.html item=item %}
+  {% endfor %}
+</ul>
 
 ## Presentations
 

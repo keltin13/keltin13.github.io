@@ -1,0 +1,21 @@
+<li class="pub">
+  <span class="pub-title">{{ item.title }}</span>
+  {%- if item.note -%}<span class="pub-note">({{ item.note }})</span>{%- endif -%}
+  <br>
+  <span class="pub-authors">
+    {%- for a in item.authors -%}
+      {%- if a == "Keltin Grimes" -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+      {%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  </span>
+  <br>
+  
+  <span class="badge venue">{{ item.venue }}</span>
+  {%- if item.award -%}<span class="badge award">{{ item.award }}</span>{%- endif -%}
+  {%- if item.links.pdf  -%}
+    <a class="icon pdf"  aria-label="PDF"  href="{{ item.links.pdf }}"><i class="fa-solid fa-file-pdf"></i></a>
+  {%- endif -%}
+  {%- if item.links.code -%}
+    <a class="icon code" aria-label="Code" href="{{ item.links.code }}"><i class="fa-brands fa-github"></i></a>
+  {%- endif -%}
+</li>

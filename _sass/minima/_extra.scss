@@ -31,3 +31,56 @@
   background-size: 5em 5em;
   background-color: #5DB5A4;
 }
+
+/**
+ * Publication Formatting
+ */
+.pub-list{list-style:none;margin:0;padding:0}
+.pub{margin:1.3rem 0}
+.pub-title{font-weight:600}
+.pub-note {
+  font-style: italic;
+  font-weight: 300;
+  margin-left: .5em;
+}
+.pub-authors{font-size:.9rem;color:#475569}
+
+/**
+ * Badge Pills
+ */
+.badge{
+  display:inline-block;
+  padding:.15em .65em;
+  border-radius:9999px;
+  font-variant:small-caps;
+  font-size:.73rem;
+  font-weight:500;
+  margin-left:.45em;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+.venue{background:#e0f2ff;color:#0369a1}
+.award{background:#fef08a;color:#854d0e}
+
+/**
+ * Circular Icon Buttons
+ */
+.icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:1.7em;height:1.7em;
+  border-radius:50%;
+  background:#f3f4f6;
+  margin-left:.4em;
+  transition:background .15s,transform .15s;
+  vertical-align:middle;
+  text-decoration:none;
+}
+.icon:hover{
+  background:#d1d5db;
+  transform:translateY(-2px);
+  text-decoration:none;
+}
+.pdf {color:#3636b8 !important}
+.code{color:#0f172a !important}

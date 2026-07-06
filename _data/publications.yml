@@ -1,0 +1,25 @@
+- title: "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing"
+  authors: ["Keltin Grimes", "Marco Christiani", "David Shriver", "Marissa Connor"]
+  venue: ICLR
+  year: 2025
+  award:
+  links:
+    pdf:  https://openreview.net/pdf?id=RzUvkI3p1D
+    code: https://github.com/keltin13/concept-rot
+
+- title: "The SaTML'24 CNN Interpretability Competition: New Innovations for Concept-Level Interpretability"
+  authors: ["Stephen Casper", "Jieun Yun", "Joonhyuk Baek", "Yeseong Jung", "Minhwan Kim", "Kiwan Kwon", "Saerom Park", "Hayden Moore", "David Shriver", "Marissa Connor", "Keltin Grimes", "Angus Nicolson", "Arush Tagade", "Jessica Rumbelow", "Hieu Minh Nguyen", "Dylan Hadfield-Menell"]
+  venue: arXiv
+  year: 2024
+  award: 2nd Place Solution
+  links:
+    pdf:  https://arxiv.org/abs/2404.02949
+
+- title: "Gone but Not Forgotten: Improved Benchmarks for Machine Unlearning"
+  note: "Extended Abstract"
+  authors: ["Keltin Grimes", "Collin Abidi", "Cole Frank", "Shannon Gallagher"]
+  venue: DLSP @ IEEE S&P
+  year: 2024
+  award:
+  links:
+    pdf:  https://arxiv.org/abs/2412.13341
