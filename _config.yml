@@ -21,9 +21,9 @@
 title: Keltin Grimes
 email: firstname lastname at gmail dot com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the portfolio of Keltin Grimes. He is an AI/ML researcher at 
-  Carnegie Mellon's Software Engineering Institute and broadly interested
-  in AI Safety.
+  Keltin is a PhD student at Carnegie Mellon University and a researcher at 
+  Carnegie Mellon's Software Engineering Institute and is broadly interested
+  in AI Safety and Security.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: keltin-grimes
