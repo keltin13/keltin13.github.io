@@ -1,10 +1,50 @@
+- title: "Memory Adapters Enable Fast, Flexible Knowledge Unlearning in LLMs"
+  authors: ["Keltin Grimes", "Kevin Kuo", "Steven Wu", "Virginia Smith", "Marissa Connor"]
+  venue: MemFM @ ICML
+  year: 2026
+  award: Oral
+  links:
+    pdf: https://openreview.net/pdf?id=LCVFastmwR
+
+- title: "Back to Blackwell: Closing the Loop on Intransitivity in Multi-Objective Preference Fine-Tuning"
+  authors: ["Jiahao Zhang", "Lujing Zhang", "Keltin Grimes", "Zhuohao Yu", "Gokul Swamy", "Zhiwei Steven Wu"]
+  venue: arXiv
+  year: 2026
+  award:
+  links:
+    pdf: https://arxiv.org/abs/2602.19041
+
+- title: "SoK: Bridging Research and Practice in LLM Agent Security"
+  authors: ["Keltin Grimes", "Julie Lawler", "Robert C. Garrett", "Emil Mathew", "Marco Christiani", "Sara Kingsley", "Zhiwei Steven Wu", "Nathan VanHoudnos"]
+  venue: SEI White Paper
+  year: 2025
+  award:
+  links:
+    pdf: https://www.sei.cmu.edu/library/bridging-research-and-practice-in-llm-agent-security/
+
+- title: "From Firewalls to Frontiers: AI Red-Teaming is a Domain-Specific Evolution of Cyber Red-Teaming"
+  authors: ["Anusha Sinha", "Keltin Grimes", "James Lucassen", "Michael Feffer", "Nathan VanHoudnos", "Zhiwei Steven Wu", "Hoda Heidari"]
+  venue: arXiv
+  year: 2025
+  award:
+  links:
+    pdf: https://arxiv.org/abs/2509.11398
+
+- title: "What Can Generative AI Red-Teaming Learn from Cyber Red-Teaming?"
+  authors: ["Anusha Sinha", "James Lucassen", "Keltin Grimes", "Michael Feffer", "Mary Soto", "Hoda Heidari", "Nathan VanHoudnos"]
+  venue: SEI Technical Report
+  year: 2025
+  award:
+  links:
+    pdf: https://www.sei.cmu.edu/library/what-can-generative-ai-red-teaming-learn-from-cyber-red-teaming/
+
 - title: "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing"
   authors: ["Keltin Grimes", "Marco Christiani", "David Shriver", "Marissa Connor"]
   venue: ICLR
   year: 2025
   award:
   links:
-    pdf:  https://openreview.net/pdf?id=RzUvkI3p1D
+    pdf: https://openreview.net/pdf?id=RzUvkI3p1D
     code: https://github.com/keltin13/concept-rot
 
 - title: "The SaTML'24 CNN Interpretability Competition: New Innovations for Concept-Level Interpretability"
@@ -13,7 +53,7 @@
   year: 2024
   award: 2nd Place Solution
   links:
-    pdf:  https://arxiv.org/abs/2404.02949
+    pdf: https://arxiv.org/abs/2404.02949
 
 - title: "Gone but Not Forgotten: Improved Benchmarks for Machine Unlearning"
   note: "Extended Abstract"
@@ -22,4 +62,4 @@
   year: 2024
   award:
   links:
-    pdf:  https://arxiv.org/abs/2412.13341
+    pdf: https://arxiv.org/abs/2405.19211
